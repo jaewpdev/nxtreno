@@ -1,9 +1,11 @@
-import Logo from '@/components/Logo';
+import HomeHero from './sections/HomeHero';
+import Problems from './sections/Problems';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Logo />
-    </main>
+    <>
+      <HomeHero />
+      <Problems />
+    </>
   )
 }

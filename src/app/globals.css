@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-h4 {
+  @apply text-[1.5rem] font-semibold leading-[33.6px];
+}
+
+.text-p {
+  @apply text-[1rem] leading-[25.6px];
+}
+
+.text-p-lg {
+  @apply text-[4vw] leading-[5vw] lg:text-[2rem] lg:leading-[44.8px];
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,14 +26,4 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
